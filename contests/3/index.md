@@ -15,8 +15,8 @@ permalink: /3
   * 본대회: [http://kriiicon.oj.uz/3/scoreboard](http://kriiicon.oj.uz/3/scoreboard)
   * 연습 세션: [http://kriiicon.oj.uz/3/pre/scoreboard](http://kriiicon.oj.uz/3/pre/scoreboard)
 * 문제 풀기
-  * 본대회: [https://oj.uz/problems/details/167](https://oj.uz/problems/details/167)
-  * 연습 세션: [https://oj.uz/problems/details/168](https://oj.uz/problems/details/168)
+  * 본대회: [https://oj.uz/problems/source/167](https://oj.uz/problems/source/167)
+  * 연습 세션: [https://oj.uz/problems/source/168](https://oj.uz/problems/source/168)
 * 간략한 힌트: [https://attach.oj.uz/contest/kriii3/hint.pdf](https://attach.oj.uz/contest/kriii3/hint.pdf)
 
 <hr>
