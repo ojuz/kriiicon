@@ -46,7 +46,8 @@
           <ul class="nav navbar-nav">
             {% assign entries = "3|4" | split:"|" %}
             {% for entry in entries %}
-            {% if page.url == ("/"|append: entry) %}
+            {% assign my_url = "/"| append:entry %}
+            {% if page.url == my_url %}
               <li class="active"><a>{{ entry }}회</a></li>
             {% else %}
               <li><a href="/{{ entry }}">{{ entry }}회</a></li>
