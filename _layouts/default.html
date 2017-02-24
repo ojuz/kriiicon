@@ -1,3 +1,8 @@
+---
+entries:
+  - 3
+  - 4
+---
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,12 +49,11 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            {% assign entries = "3|4" | split:"|" %}
             {% for entry in entries %}
             {% if page.url == "/" + entry %}
               <li class="active"><a>{{ entry }}회</a></li>
             {% else %}
-              <li><a href="/{{ entry }} ">{{ entry }}회</a></li>
+              <li><a href="/{{ entry }}">{{ entry }}회</a></li>
             {% endif %}
             {% endfor %}
           </ul>
