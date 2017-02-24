@@ -11,7 +11,9 @@ permalink: /3
 
 제3회 kriiicon이 종료되었습니다!
 
-* 결과 : [http://oj.uz/contest/KRIII3/standings](http://oj.uz/contest/KRIII3/standings)
+* 결과
+  * 본대회: [http://kriiicon.oj.uz/3/scoreboard](http://kriiicon.oj.uz/3/scoreboard)
+  * 연습 세션: [http://kriiicon.oj.uz/3/pre/scoreboard](http://kriiicon.oj.uz/3/pre/scoreboard)
 * 문제 풀기
   * 본대회: [http://oj.uz/problems/details/167](http://oj.uz/problems/details/167)
   * 연습 세션: [http://oj.uz/problems/details/168](http://oj.uz/problems/details/168)
