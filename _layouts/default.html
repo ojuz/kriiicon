@@ -46,12 +46,10 @@
           <ul class="nav navbar-nav">
             {% assign entries = "3|4" | split:"|" %}
             {% for entry in entries %}
-            {{ page.url }}
-            {{ "/" + entry }}
-            {% if page.url == "/" + entry %}
+            {% if page.url == ("/"|append: entry) %}
               <li class="active"><a>{{ entry }}회</a></li>
             {% else %}
-              <li><a href="/{{ entry }} ">{{ entry }}회</a></li>
+              <li><a href="/{{ entry }}">{{ entry }}회</a></li>
             {% endif %}
             {% endfor %}
           </ul>
