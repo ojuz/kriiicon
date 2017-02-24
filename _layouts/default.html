@@ -44,6 +44,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+            {{ page.url }}
             <li{% if page.url == "/4.html" %} class="active"{% endif %}><a href="/4">4회</a></li>
             <li{% if page.url == "/3.html" %} class="active"{% endif %}><a href="/3">3회</a></li>
           </ul>
