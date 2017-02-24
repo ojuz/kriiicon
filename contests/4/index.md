@@ -15,7 +15,7 @@ permalink: /4
 * 문제 풀기
   * 본 대회: [https://oj.uz/problems/source/177](https://oj.uz/problems/source/177)
   * 연습 세션: [https://oj.uz/problems/source/178](https://oj.uz/problems/source/178)
-* [풀이](http://attach.oj.uz/contest/kriii4/editorial.pdf)
+* 풀이: [https://attach.oj.uz/contest/kriii4/editorial.pdf](https://attach.oj.uz/contest/kriii4/editorial.pdf)
 
 <hr>
 
