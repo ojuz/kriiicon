@@ -1,7 +1,7 @@
---
+---
 title: 제4회 kriiicon
 permalink: /4
---
+---
 
 <style type="text/css">
 .important { font-size: 15px; font-weight: bold; color: red; }
