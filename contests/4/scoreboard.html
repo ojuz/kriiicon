@@ -1,0 +1,3100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>제4회 kriiicon 점수판</title>
+    
+ <style type='text/css'>
+    @font-face { font-family:'NanumGothicWeb'; src: url('http://oj.uz/styles/font/NanumGothicWeb.woff') format('woff');}
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://oj.uz/scoreboard/my1/css/sc_bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://oj.uz/scoreboard/my1/css/sticky-footer.navbar.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">제4회 kriiicon 점수판 (최종)</a>
+        </div>
+      </div>
+    </nav>
+
+        <!-- Begin page content -->
+    
+    <style type="text/css">
+    .full-score { color: forestgreen; font-weight: bold; }
+    .partial-score { color: green; }
+    .wrong { color: red; }
+    .last_submit_time { color: gray; font-size: 12px; font-weight: normal;}
+    .fail_count { color: red; font-size: 12px; font-weight: normal;}
+    </style>
+
+    <div class="container">
+        <p>
+           2016-02-25 18:00:00 KST 기준</p>
+        <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th style="width: 50px; min-width: 50px;" rowspan="2">순위</th>
+                    <th style="" rowspan="2">팀</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">Δ</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">괄호</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">능력</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">동전</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">로봇</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">목공</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">비트</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">순열</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">악수</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">제비</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">창문</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">카드</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">트리</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">팔찌</th>
+                                        <th style="width: 70px; min-width: 60px; text-align: center;">흑백</th>
+                                        <th style="width: 70px; min-width: 70px; text-align: center;" rowspan="2">점수</th>
+                    <th style="width: 70px; min-width: 70px; text-align: center;" rowspan="2">페널티</th>
+                </tr>
+                <tr>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">0</span> / 9                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">13</span> / 35                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">3</span> / 4                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">14</span> / 25                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">1</span> / 9                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">0</span> / 2                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">0</span> / 2                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">7</span> / 7                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">2</span> / 12                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">0</span> / 1                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">31</span> / 38                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">0</span> / 5                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">9</span> / 12                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">7</span> / 8                    </td>
+                                        <td style="width: 70px; min-width: 60px; text-align: center; font-size: 12px;">
+                        <span style="color: green; font-weight: bold;">0</span> / 4                    </td>
+                                    </tr>
+            </thead>
+            <tbody>
+                            <tr class="">
+                    <td>1</td>
+                    <td><span style="font-size: 17px; font-weight: bold">..</span><small> @ 서울대학교</small><br><small>박성관, 박서홍, 지정우</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:20</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">03:51</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">01:41</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        4                        <br> 
+                        <span class="last_submit_time">04:05</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        4                        <br> 
+                        <span class="last_submit_time">04:33</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        9                        <br> 
+                        <span class="last_submit_time">04:55</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">03:45</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">03:20</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        6                        <br> 
+                        <span class="last_submit_time">04:53</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:28</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        13                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:22</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">02:30</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">02:15</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        6                        <br> 
+                        <span class="last_submit_time">03:56</span>  
+                                        </td>
+                                    <td style="text-align: center;">842</td>
+                    <td style="text-align: center;">2934</td>
+                </tr>
+                            <tr class="">
+                    <td>2</td>
+                    <td><span style="font-size: 17px; font-weight: bold">DROP TABLE USER;</span><small> @ POSTECH</small><br><small>Qwaz, breakun</small></td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:48</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:24</span>  
+                                        </td>
+                                    <td class="full-score info" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:56</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:19</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">02:51</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">01:45</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">03:20</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:16</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">700</td>
+                    <td style="text-align: center;">1091</td>
+                </tr>
+                            <tr class="">
+                    <td>3</td>
+                    <td><span style="font-size: 17px; font-weight: bold">oesmandog</span><small> @ 경기침대고등학교</small><br><small>eaststar, Namnamseo, ggoh</small></td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-11)</span> <br> 
+                        <span class="last_submit_time">04:26</span>  
+                                        </td>
+                                    <td class="full-score info" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:34</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:20</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score info" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">02:02</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        5                        <br> 
+                        <span class="last_submit_time">04:51</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:45</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        13                        <span class="fail_count">(-6)</span> <br> 
+                        <span class="last_submit_time">04:59</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">03:24</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">04:26</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        6                        <br> 
+                        <span class="last_submit_time">04:50</span>  
+                                        </td>
+                                    <td style="text-align: center;">624</td>
+                    <td style="text-align: center;">1931</td>
+                </tr>
+                            <tr class="">
+                    <td>4</td>
+                    <td><span style="font-size: 17px; font-weight: bold">주황버섯</span><small> @ 헤네시스 북쪽언덕</small><br><small>Doju, ntopia, cseteram</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">04:13</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:25</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">04:58</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        9                        <br> 
+                        <span class="last_submit_time">00:24</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">03:04</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-7)</span> <br> 
+                        <span class="last_submit_time">01:29</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-5)</span> <br> 
+                        <span class="last_submit_time">04:38</span>  
+                                        </td>
+                                    <td class="full-score info" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:17</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-6)</span> <br> 
+                        <span class="last_submit_time">02:50</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">04:53</span>  
+                                        </td>
+                                    <td style="text-align: center;">609</td>
+                    <td style="text-align: center;">1282</td>
+                </tr>
+                            <tr class="">
+                    <td>5</td>
+                    <td><span style="font-size: 17px; font-weight: bold">(![]+[])[!![]+!![]+!![]]</span><small> @ SNUCSE 13</small><br><small>cubelover</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">01:30</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:52</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:58</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">03:50</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        5                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:46</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:28</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:45</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:29</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">605</td>
+                    <td style="text-align: center;">1140</td>
+                </tr>
+                            <tr class="">
+                    <td>6</td>
+                    <td><span style="font-size: 17px; font-weight: bold">아기기린</span><small> @ 아직은백수</small><br><small>박상수</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">01:18</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">01:41</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        4                        <br> 
+                        <span class="last_submit_time">04:54</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">04:42</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:25</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:22</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">03:16</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">604</td>
+                    <td style="text-align: center;">1138</td>
+                </tr>
+                            <tr class="">
+                    <td>7</td>
+                    <td><span style="font-size: 17px; font-weight: bold">Hanwha_Eagles</span><small> @ SNU16</small><br><small>조승현</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">00:42</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">03:29</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:31</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        4                        <br> 
+                        <span class="last_submit_time">04:46</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">04:11</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        5                        <br> 
+                        <span class="last_submit_time">04:25</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:37</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">509</td>
+                    <td style="text-align: center;">1321</td>
+                </tr>
+                            <tr class="">
+                    <td>8</td>
+                    <td><span style="font-size: 17px; font-weight: bold">Bravely you</span><small> @ Charlotte</small><br><small>ainu7, xhae, +@?</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">03:01</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:04</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score info" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:50</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:20</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">01:25</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        6                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">03:20</span>  
+                                        </td>
+                                    <td style="text-align: center;">506</td>
+                    <td style="text-align: center;">1000</td>
+                </tr>
+                            <tr class="">
+                    <td>9</td>
+                    <td><span style="font-size: 17px; font-weight: bold">&amp;#8238</span><small> @ 대한민국</small><br><small>emppu, emppu_daddy, emppu_grandpa</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">03:30</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:01</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:24</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:59</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">04:39</span>  
+                                        </td>
+                                    <td class="full-score info" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:51</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">500</td>
+                    <td style="text-align: center;">845</td>
+                </tr>
+                            <tr class="">
+                    <td>10</td>
+                    <td><span style="font-size: 17px; font-weight: bold">크리님 이게 뭐에요</span><small> @ 서울대</small><br><small>최석환</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">04:07</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:08</span>  
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:13</span>  
+                                        </td>
+                                    <td class="full-score info" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:14</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:09</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">04:10</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">04:14</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">500</td>
+                    <td style="text-align: center;">1338</td>
+                </tr>
+                            <tr class="">
+                    <td>11</td>
+                    <td><span style="font-size: 17px; font-weight: bold">RUNmyCODE</span><small> @ KAIST</small><br><small>jihoon</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        8                        <span class="fail_count">(-8)</span> <br> 
+                        <span class="last_submit_time">04:40</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score info" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:10</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:31</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">208</td>
+                    <td style="text-align: center;">561</td>
+                </tr>
+                            <tr class="">
+                    <td>12</td>
+                    <td><span style="font-size: 17px; font-weight: bold">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span><small> @ 고려대학교</small><br><small>배근우, 이동호, 전명우</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:06</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:47</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">04:56</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        5                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:26</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">00:24</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">03:17</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">205</td>
+                    <td style="text-align: center;">237</td>
+                </tr>
+                            <tr class="">
+                    <td>13</td>
+                    <td><span style="font-size: 17px; font-weight: bold">고양이 밧줄</span><small> @ 냥코대전쟁</small><br><small>김희훈</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:41</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:51</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">200</td>
+                    <td style="text-align: center;">92</td>
+                </tr>
+                            <tr class="">
+                    <td>14</td>
+                    <td><span style="font-size: 17px; font-weight: bold">수찬님 이게 뭐에요</span><small> @ 경기과학고등학교</small><br><small>구재현</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:30</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:39</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">200</td>
+                    <td style="text-align: center;">209</td>
+                </tr>
+                            <tr class="">
+                    <td>15</td>
+                    <td><span style="font-size: 17px; font-weight: bold">yongwhan</span><small> @ MIT</small><br><small>임용환</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:24</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:31</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:49</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">200</td>
+                    <td style="text-align: center;">213</td>
+                </tr>
+                            <tr class="">
+                    <td>16</td>
+                    <td><span style="font-size: 17px; font-weight: bold">아</span><small> @ 충남대학교</small><br><small>ㅋㅋㅋ</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">04:05</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">01:08</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">200</td>
+                    <td style="text-align: center;">313</td>
+                </tr>
+                            <tr class="">
+                    <td>17</td>
+                    <td><span style="font-size: 17px; font-weight: bold">크리솔찌잘하냐</span><small> @ .북대</small><br><small>yukariko, chatterboy, joonas</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-15)</span> <br> 
+                        <span class="last_submit_time">03:55</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">04:25</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:56</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">200</td>
+                    <td style="text-align: center;">591</td>
+                </tr>
+                            <tr class="">
+                    <td>18</td>
+                    <td><span style="font-size: 17px; font-weight: bold">홍이장군</span><small> @ 그린픽스 연구실, 고려대학교</small><br><small>홍은기, 이원철, 장홍준</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        5                        <br> 
+                        <span class="last_submit_time">02:58</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:48</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">01:44</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        9                        <br> 
+                        <span class="last_submit_time">00:26</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">114</td>
+                    <td style="text-align: center;">328</td>
+                </tr>
+                            <tr class="">
+                    <td>19</td>
+                    <td><span style="font-size: 17px; font-weight: bold">newbie</span><small> @ none</small><br><small>noslaak</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:40</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">03:27</span>  
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        13                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">02:46</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">113</td>
+                    <td style="text-align: center;">453</td>
+                </tr>
+                            <tr class="">
+                    <td>20</td>
+                    <td><span style="font-size: 17px; font-weight: bold">Max Penalty Min Score</span><small> @ 페널티전문</small><br><small>익명의 오리너구리, 익명의 코요테, 익명의 팬더</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        8                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">04:51</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        5                        <br> 
+                        <span class="last_submit_time">01:33</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:33</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">113</td>
+                    <td style="text-align: center;">477</td>
+                </tr>
+                            <tr class="">
+                    <td>21</td>
+                    <td><span style="font-size: 17px; font-weight: bold">최길웅팬클럽</span><small> @ 서울대학교</small><br><small>최길웅, 박상혁, 박찬수</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        5                        <br> 
+                        <span class="last_submit_time">02:06</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score info" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">00:17</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">105</td>
+                    <td style="text-align: center;">143</td>
+                </tr>
+                            <tr class="">
+                    <td>22</td>
+                    <td><span style="font-size: 17px; font-weight: bold">무소속</span><small> @ 무소속</small><br><small>noeffserv</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">04:51</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">01:22</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">82</td>
+                </tr>
+                            <tr class="">
+                    <td>23</td>
+                    <td><span style="font-size: 17px; font-weight: bold">파부쟝캐리해죠</span><small> @ ?</small><br><small>파부, 수진, 비밀병기</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">03:24</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">01:29</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">89</td>
+                </tr>
+                            <tr class="">
+                    <td>24</td>
+                    <td><span style="font-size: 17px; font-weight: bold">InjeUniv</span><small> @ 인제대학교</small><br><small>kk1401</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">01:59</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">01:34</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">94</td>
+                </tr>
+                            <tr class="">
+                    <td>25</td>
+                    <td><span style="font-size: 17px; font-weight: bold">CodingAjouJalham</span><small> @ Ahou University</small><br><small>mitslll</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">01:44</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">104</td>
+                </tr>
+                            <tr class="">
+                    <td>26</td>
+                    <td><span style="font-size: 17px; font-weight: bold">잠좀자라</span><small> @ 서울대학교</small><br><small>pjh0123</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">04:57</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:40</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">160</td>
+                </tr>
+                            <tr class="">
+                    <td>27</td>
+                    <td><span style="font-size: 17px; font-weight: bold">nona1314</span><small> @ nona1314</small><br><small>nona1314, adman</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">02:47</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">167</td>
+                </tr>
+                            <tr class="">
+                    <td>28</td>
+                    <td><span style="font-size: 17px; font-weight: bold">잘거임</span><small> @ 인하대학교</small><br><small>정현기, 박소민, 이용준</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">01:23</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:44</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <br> 
+                        <span class="last_submit_time">03:01</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">181</td>
+                </tr>
+                            <tr class="">
+                    <td>29</td>
+                    <td><span style="font-size: 17px; font-weight: bold">siv</span><small> @ 학생</small><br><small>김수진, 서영학</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-8)</span> <br> 
+                        <span class="last_submit_time">04:07</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">03:54</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">02:24</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:20</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">184</td>
+                </tr>
+                            <tr class="">
+                    <td>30</td>
+                    <td><span style="font-size: 17px; font-weight: bold">김태현</span><small> @ 대한민국</small><br><small>김태현, 김희재</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">04:41</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">04:53</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:18</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">02:58</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">218</td>
+                </tr>
+                            <tr class="">
+                    <td>30</td>
+                    <td><span style="font-size: 17px; font-weight: bold">p.h</span><small> @ KAU</small><br><small>isac322, eldsg, whrdp123</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">04:01</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="full-score success" style="text-align: center;">
+                     
+                        100                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">03:18</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">218</td>
+                </tr>
+                            <tr class="">
+                    <td>32</td>
+                    <td><span style="font-size: 17px; font-weight: bold">zzolmani</span><small> @ 부산대학교</small><br><small>kium100, sjo20, algoshipda</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        8                        <span class="fail_count">(-5)</span> <br> 
+                        <span class="last_submit_time">02:34</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        3                        <span class="fail_count">(-6)</span> <br> 
+                        <span class="last_submit_time">04:28</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">11</td>
+                    <td style="text-align: center;">642</td>
+                </tr>
+                            <tr class="">
+                    <td>33</td>
+                    <td><span style="font-size: 17px; font-weight: bold">pnu25</span><small> @ 부산대학교</small><br><small>김재관, 이영린, 김동현</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        3                        <br> 
+                        <span class="last_submit_time">01:23</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">83</td>
+                </tr>
+                            <tr class="">
+                    <td>34</td>
+                    <td><span style="font-size: 17px; font-weight: bold">알고르가즘</span><small> @ 서울시립대학교</small><br><small>이성우, 김훈, 신동주</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">02:48</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:12</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        3                        <br> 
+                        <span class="last_submit_time">01:40</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">100</td>
+                </tr>
+                            <tr class="">
+                    <td>35</td>
+                    <td><span style="font-size: 17px; font-weight: bold">mininjunho</span><small> @ 고려대학교</small><br><small>mh5664, LK149, wnsgh1906</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:16</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        3                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">01:05</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">105</td>
+                </tr>
+                            <tr class="">
+                    <td>36</td>
+                    <td><span style="font-size: 17px; font-weight: bold">pi_got_chu</span><small> @ 숭실대학교</small><br><small>sys7961, choiking10, king7282</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        3                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">02:02</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:46</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">182</td>
+                </tr>
+                            <tr class="">
+                    <td>37</td>
+                    <td><span style="font-size: 17px; font-weight: bold">NeoMu Gasidang</span><small> @ 충북과학고등학교</small><br><small>Cloge</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">00:45</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        3                        <span class="fail_count">(-5)</span> <br> 
+                        <span class="last_submit_time">01:48</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">208</td>
+                </tr>
+                            <tr class="">
+                    <td>38</td>
+                    <td><span style="font-size: 17px; font-weight: bold">WanderYonder</span><small> @ 데하꾜</small><br><small>exqt</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="partial-score success" style="text-align: center;">
+                     
+                        3                        <span class="fail_count">(-6)</span> <br> 
+                        <span class="last_submit_time">01:46</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">226</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">잉여맨</span><small> @ ㅂㅅ대</small><br><small>codingman</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">02:19</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">첫도전</span><small> @ 대학생</small><br><small>김태우</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">comtrue</span><small> @ (주)컴트루테크놀러지</small><br><small>Apple_Cplus, hgkim</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">사회 통념상 보기에 큰 하자가 없는 적당한 이름</span><small> @ 대전</small><br><small>배창근, 윤여민, 이민규</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">짐</span><small> @ 옮긴다</small><br><small>ekzm0204</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">Wrong Answer again?!</span><small> @ 중앙대학교</small><br><small>정진경</small></td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:14</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">02:22</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">1+2=1</span><small> @ 가톨릭대학교</small><br><small>심재국, 임종미, 김태균</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">01:16</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:18</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">태극기의도시 구리시</span><small> @ 서강대학교</small><br><small>이건희</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">고대구로병원</span><small> @ 우리집</small><br><small>임창민</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">회사원</span><small> @ 군포회사</small><br><small>jameskoo, qataro</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-4)</span> <br> 
+                        <span class="last_submit_time">04:38</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">haeso</span><small> @ haeso</small><br><small>김현우</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">www.mma.go.kr</span><small> @ 제0502-501호</small><br><small>hjjang45, specialjin1</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">솔로고리즘</span><small> @ 손고리즘</small><br><small>김재경</small></td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:17</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-7)</span> <br> 
+                        <span class="last_submit_time">02:10</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">끵</span><small> @ 왍</small><br><small>Hyper_nation</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">목표는3등</span><small> @ 가톨릭대학교 컴퓨터정보공학부</small><br><small>최창우, 김승택</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="active">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">운영진</span><small> @ oj.uz</small><br><small>박수찬</small></td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:29</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">bshnet</span><small> @ bshnet</small><br><small>bshnet</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">CODING_JAM</span><small> @ 숭실대학교</small><br><small>주영준</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-3)</span> <br> 
+                        <span class="last_submit_time">03:16</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">Sex</span><small> @ Sexmaster</small><br><small>Sex</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">치킨을사왔는데왜먹질못하니</span><small> @ 전남대학교</small><br><small>baactree</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">F.M.L</span><small> @ </small><br><small>이승민</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">MintChocoCookie</span><small> @ 카카오</small><br><small>조승현</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">hello world</span><small> @ 대한민국</small><br><small>He</small></td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:06</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">01:42</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">앙개물띠 개물개물 져아</span><small> @ 전북대학교</small><br><small>201023777, wjdtmdrbs88</small></td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:33</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-2)</span> <br> 
+                        <span class="last_submit_time">03:46</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">대한친구 강한육군</span><small> @ 고려대학교</small><br><small>functionx</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:56</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">새내기배움터에서맞이하는크리콘</span><small> @ Ajou univ. A.N.S.I.</small><br><small>김민규(kmg8280), 최승주(wowoto9772), 송인호(highalps)</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">DoNotTouchAnything</span><small> @ 금오공과대학교</small><br><small>김병욱</small></td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:44</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">상우</span><small> @ 김</small><br><small>김상우</small></td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">00:43</span>  
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">04:08</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">성역의코더</span><small> @ 숭실대학교</small><br><small>이충훈</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                            <tr class="">
+                    <td>39</td>
+                    <td><span style="font-size: 17px; font-weight: bold">금릉초 人災들</span><small> @ 미덕중학교, 충주고등학교</small><br><small>이온조(onjo0127), 류지민(nick11967), 장형준(wkd48632)</small></td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-5)</span> <br> 
+                        <span class="last_submit_time">01:36</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-1)</span> <br> 
+                        <span class="last_submit_time">02:06</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="wrong danger" style="text-align: center;">
+                     
+                        0                        <span class="fail_count">(-7)</span> <br> 
+                        <span class="last_submit_time">04:09</span>  
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td class="" style="text-align: center;">
+                                        </td>
+                                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                        </tbody>
+        </table>
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://oj.uz/scoreboard/my1/js/bootstrap.min.js"></script>
+  </body>
+</html>
