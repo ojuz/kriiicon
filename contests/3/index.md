@@ -1,3 +1,7 @@
+--
+permalink: /3
+--
+
 <style type="text/css">
 .important { font-size: 15px; font-weight: bold; }
 </style>
