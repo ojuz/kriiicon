@@ -43,6 +43,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+            {{ site.data.entries }}
             {% for entry in site.data.entries %}
               {% if page.url == "/" + entry %}
                 <li class="active"><a>{{ entry }}회</a></li>
