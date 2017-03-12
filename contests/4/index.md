@@ -12,7 +12,7 @@ redirect_from: "/"
 
 제4회 kriiicon이 종료되었습니다!
 
-* 결과 : [http://kriiicon.oj.uz/4/scoreboard](http://kriiicon.oj.uz/4/scoreboard)
+* 결과 : [https://kriiicon.oj.uz/4/scoreboard](https://kriiicon.oj.uz/4/scoreboard)
 * 문제 풀기
   * 본 대회: [https://oj.uz/problems/source/177](https://oj.uz/problems/source/177)
   * 연습 세션: [https://oj.uz/problems/source/178](https://oj.uz/problems/source/178)
