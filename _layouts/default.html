@@ -44,7 +44,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            {% assign entries = "5|4|3" | split:"|" %}
+            {% assign entries = "5|4|3|2|1" | split:"|" %}
             {% for entry in entries %}
             {% assign my_url = "/"| append:entry %}
             {% if page.url == my_url %}
