@@ -17,7 +17,7 @@ redirect_from: "/"
   - 참가신청은 [여기에서!](http://oj.uz/contest/KRIII5) 아직 *참가 신청이 열리지는 않았습니다.*
 * 대부분의 규칙은 작년과 동일합니다. <span class="important>">최대 3인 1팀, 컴퓨터 수 제한 없음!</span> 자세한 규칙은 <a href="#rules">여기</a>에서 살펴보세요.
 * 아쉽게도 올해에는 상금이 없습니다. 상품은 생각해보고 있습니다.
-* 아쉽게도 <span class="important">C/C++/C++14</span>만 사용 가능합니다.
+* <span class="important">C, C++, C++11, C++14, Python 2, Python 3</span>만 사용 가능합니다.
 
 <hr>
 
