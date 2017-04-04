@@ -8,7 +8,7 @@ redirect_from: "/"
 .important { font-size: 15px; font-weight: bold; color: red; }
 </style>
 
-<h1>제 5회 kriiicon!</h1>
+<h1>제5회 kriiicon!</h1>
 
 * 연습세션: 2017/04/29 12:00 - 2017/04/30 12:55 (KST)
   - 불이익을 얻지 않기 위해 꼭 참가하는 것을 권장합니다!

@@ -7,7 +7,7 @@ permalink: /3
 .important { font-size: 15px; font-weight: bold; }
 </style>
 
-<h1>제 3회 kriiicon!</h1>
+<h1>제3회 kriiicon!</h1>
 
 제3회 kriiicon이 종료되었습니다!
 
