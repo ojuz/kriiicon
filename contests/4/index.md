@@ -1,7 +1,6 @@
 ---
 title: 제4회 kriiicon
 permalink: /4
-redirect_from: "/"
 ---
 
 <style type="text/css">
