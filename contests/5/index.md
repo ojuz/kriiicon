@@ -15,7 +15,8 @@ redirect_from: "/"
   - 연습세션은 *본대회와 독립적*이므로 본대회에 참가하시려면 **본대회 참가 신청을 해야** 합니다!
 * 본대회: 2017/04/30 <del>13:00 - 18:00</del> <span class="important">12:00 - 17:00</span> (KST) (UPD 2017/04/13 - 코드잼 R1C의 시작이 6시라 시간을 앞으로 조금 당깁니다.)
   - 참가신청은 [여기에서!](http://oj.uz/contest/KRIII5)
-  - <span class="important">UPD 2017/04/10 01:40 - 참가 신청이 가능합니다!</span>
+  - <span class="important">"초대장"</span>의 정체에 대해 궁금해하시는 분들을 위해: [여기](https://guide.oj.uz/ko/latest/How%20to%20register%20in%20a%20contest.html)를 참고해 주세요.
+  - <span class="important">UPD 2017/04/10 01:40 - 참가 신청이 가능합니다!</span>
 * 대부분의 규칙은 작년과 동일합니다. <span class="important>">최대 3인 1팀, 컴퓨터 수 제한 없음!</span> 자세한 규칙은 <a href="#rules">여기</a>에서 살펴보세요.
 * 아쉽게도 올해에는 상금이 없습니다. 상품은 생각해보고 있습니다.
 * <span class="important">C, C++, C++11, C++14, Python 2, Python 3</span>만 사용 가능합니다.
