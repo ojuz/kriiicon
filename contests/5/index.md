@@ -12,11 +12,10 @@ redirect_from: "/"
 
 참가해주신 모든 분들께 감사드립니다!
 
-[연습 세션 문제](https://www.dropbox.com/s/53hb1jlcso00mv3/_%EC%97%B0%EC%8A%B5%EB%8C%80%ED%9A%8C%EC%A0%84%EC%B2%B4.pdf?dl=0)
-
-[본 문제](https://www.dropbox.com/s/fckbc05ikic8u4f/_%EB%B3%B8%EB%8C%80%ED%9A%8C%EC%A0%84%EC%B2%B4.pdf?dl=0)
-
-[코멘터리](http://kriii.tistory.com/10)
+* 연습 세션: [문제](/contests/5/_%EC%97%B0%EC%8A%B5%EB%8C%80%ED%9A%8C%EC%A0%84%EC%B2%B4.pdf) / [채점](https://oj.uz/problems/source/231)
+* 본 대회: [문제](/contests/5/_%EB%B3%B8%EB%8C%80%ED%9A%8C%EC%A0%84%EC%B2%B4.pdf) / [채점](https://oj.uz/problems/source/230)
+* [코멘터리](http://kriii.tistory.com/10)
+* 점수판: [사진](/contests/5/screencapture-oj-uz-contest-scoreboard-KRIII5-1493540674604.png)
 
 <br>
 
