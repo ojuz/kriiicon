@@ -8,6 +8,14 @@ redirect_from: "/"
 .important { font-size: 15px; font-weight: bold; color: red; }
 </style>
 
+<h1>대회가 종료되었습니다!</h1>
+
+[연습 세션 문제](https://www.dropbox.com/s/53hb1jlcso00mv3/_%EC%97%B0%EC%8A%B5%EB%8C%80%ED%9A%8C%EC%A0%84%EC%B2%B4.pdf?dl=0)
+[본 문제](https://www.dropbox.com/s/fckbc05ikic8u4f/_%EB%B3%B8%EB%8C%80%ED%9A%8C%EC%A0%84%EC%B2%B4.pdf?dl=0)
+[코멘터리](http://kriii.tistory.com/10)
+
+<br>
+
 <h1>제5회 kriiicon!</h1>
 
 * 연습세션: 2017/04/29 12:00 - 2017/04/30 <del>12:55</del> 11:55 (KST)
